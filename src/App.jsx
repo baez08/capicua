@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPencil } from '@fortawesome/free-solid-svg-icons'
+import { AppRouter } from './routers/AppRouter';
 
-function App() {
-  const [count, setCount] = useState(0)
+//Styles
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap';
+import './styles/styles.scss';
+import { Footer } from './app/layout/Footer';
 
+export const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="app__content d-flex">
+
+        <div className="app__logo d-flex justify-content-center align-items-center d-none d-md-flex">
+          <img src="../src/assets/domino.png" alt="domino" />
+        </div>
+
+        <div className=" app__main container d-flex flex-column justify-content-around align-items-center">
+
+          <div className="app__title container mt-3 mb-3 d-flex justify-content-center align-items-center">
+            Capicua Apunte <span className="ms-2"><FontAwesomeIcon icon={faPencil} /></span>
+          </div>
+
+          <div className="app__box container">
+            <AppRouter />
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      <Footer/>
     </>
   )
 }
 
-export default App

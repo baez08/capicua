@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: $text-primary;
+}
+
+.btn {
+    border-radius: 15px;
+    font-weight: 600;
+    padding: 10px 25px;
+}
+
+.modal-content {
+    background-color: $bg-primary;
+    color: $text-primary;
+}
+
+@media (max-width: 767px) {
+
+.modal {
+    margin-top: 25px;
+}
+
+}

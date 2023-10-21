@@ -1,0 +1,53 @@
+.app__content {
+    background-color: $bg-primary;
+    color: $text-primary;
+    height: 93vh;
+    width: 100vw;
+}
+
+.app__logo {
+    height: 100%;
+    width: 35%;
+
+    & img {
+        max-width: 100%;
+        width: 50%;
+        transform: rotate(40deg);
+    }
+}
+
+.app__main {
+    height: 100%;
+    width: 65%;
+}
+
+.app__title {
+    font-size: 25px;
+    height: 10%;
+    width: 50%;
+    border: 3px solid $text-primary;
+    border-radius: 50px;
+}
+
+.app__box {
+    height: 85%;
+    width: 65%;
+}
+
+//Dispositivo Moviles
+
+@media (max-width: 767px) {
+
+    .app__main {
+        width: 100%;
+    }
+
+    .app__title {
+        width: 90%;
+    }
+
+    .app__box {
+        width: 100%;
+    }
+
+}
