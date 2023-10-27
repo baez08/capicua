@@ -1,0 +1,74 @@
+.note__content {
+    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.note__modal {
+    width: 70%;
+
+    & .btn {
+        border-radius: 15px;
+        font-weight: 600;
+        padding: 0px 35px;
+    }
+}
+
+.note__listNote {
+    height: 90%;
+    max-height: 60%;
+    max-width: 100%;
+    width: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    & .list-group-item {
+        background: none;
+        border: none;
+        color: $text-primary;
+    }
+}
+
+.note__list-box {
+    width: 100%;
+}
+
+.note__list-dato {
+    font-size: 20px;
+    border-bottom: 1px solid $text-primary;
+    text-align: center;
+    width: 46%;
+}
+
+.note__total {
+    width: 50%;
+}
+
+.note__total-bold {
+    font-size: 35px;
+}
+
+//Dispositivo Moviles
+
+@media (max-width: 767px) {
+    
+    .note__modal {
+        width: 100%;
+    
+        & .btn {
+            padding: 5px 35px;
+        }
+    }
+
+    .note__listNote {
+        height: 90%;
+        max-height: 60%;
+        max-width: 100%;
+        width: 90%;
+    }
+    
+    .note__total {
+        width: 70%;
+    }
+
+}

@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 import { ListTeam } from '../components/team/ListTeam'
 import { ModalAddTeam } from '../components/team/ModalAddTeam'
+import { Link } from 'react-router-dom'
 
 export const HomePage = () => {
   return (
@@ -29,13 +30,13 @@ export const HomePage = () => {
           <span className="mb-2">Inicio <FontAwesomeIcon icon={faCirclePlay} /></span>
 
           <div className="">
-            <button className="btn btn-primary me-4">
+            <Link className="btn btn-primary me-4" to="/apunte">
               Tradicional
-            </button>
+            </Link>
 
-            <button className="btn btn-primary">
+            <Link className="btn btn-primary" to="/apunte">
               Aleatorio
-            </button>
+            </Link>
           </div>
         </div>
       </div>
