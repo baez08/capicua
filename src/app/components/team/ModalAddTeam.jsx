@@ -12,7 +12,7 @@ export const ModalAddTeam = () => {
     return (
         <>
             <Button variant="primary" onClick={handleShow}>
-                Add Team <FontAwesomeIcon icon={faCirclePlus} />
+                Añadir equipo <FontAwesomeIcon icon={faCirclePlus} />
             </Button>
 
             <Modal show={show} onHide={handleShow}>
