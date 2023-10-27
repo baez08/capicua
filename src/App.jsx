@@ -14,7 +14,7 @@ export const App = () => {
       <div className="app__content d-flex">
 
         <div className="app__logo d-flex justify-content-center align-items-center d-none d-md-flex">
-          <img src="../src/assets/domino.png" alt="domino" />
+          <img src="./assets/domino.png" alt="domino" />
         </div>
 
         <div className=" app__main container d-flex flex-column justify-content-around align-items-center">
